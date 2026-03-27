@@ -16,7 +16,6 @@ p {
 
 .changelog {
   margin: 2rem;
-  min-width: 600px;
 }
 
 .item {
@@ -55,4 +54,25 @@ p {
   padding: .75rem 1.5rem;
   border-radius: 7.5px;
   border: 0 #000;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .content-box {
+    border-left: 2px solid black;
+    position: relative;
+    padding: 10px 0 20px 20px;
+  }
+
+  .date {
+    border-left: 2px solid black;
+    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+  }
 }
